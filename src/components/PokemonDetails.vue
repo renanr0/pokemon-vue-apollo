@@ -7,7 +7,7 @@
     >
       <template slot-scope="{ result: { loading, error, data }, isLoading }" >
         <div class='loading-container' v-if="isLoading">
-          <div class="lds-dual-ring"></div>
+          <Loading />
         </div>
         <div class='details-box' v-if='data && !isLoading'> 
           <div class='box-max-container' >
@@ -32,12 +32,14 @@ import gql from 'graphql-tag'
 import TypeBadge from '@/components/TypeBadge.vue'
 import BoxMax from '@/components/BoxMax.vue'
 import AttackTable from '@/components/AttackTable.vue'
+import Loading from '@/components/Loading.vue'
 
 @Component({
   components: {
     TypeBadge,
     BoxMax,
-    AttackTable
+    AttackTable,
+    Loading
   }
 })
 export default class PokemonDetails extends Vue {
@@ -101,32 +103,6 @@ export default class PokemonDetails extends Vue {
 
   .container{
     height: 100%;
-  }
-
-// author: https://loading.io/css/
-  .lds-dual-ring {
-    display: inline-block;
-    width: 64px;
-    height: 64px;
-  }
-  .lds-dual-ring:after {
-    content: " ";
-    display: block;
-    width: 46px;
-    height: 46px;
-    margin: 1px;
-    border-radius: 50%;
-    border: 5px solid grey;
-    border-color: grey transparent grey transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-  }
-  @keyframes lds-dual-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
   }
 
 </style>
