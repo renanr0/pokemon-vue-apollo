@@ -1,0 +1,20 @@
+query pokemon($name: String){
+  pokemon(name: $name) {
+    id
+    types
+    maxHP
+    maxCP
+    attacks {
+      fast{
+        name
+        type
+        damage
+      }
+      special {
+        name
+        type
+        damage
+      }
+    }
+  }
+}
