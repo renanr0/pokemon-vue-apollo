@@ -27,7 +27,6 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import TypeBadge from './TypeBadge.vue';
-import pokemons from '@/assets/pokemons.json'
 
 @Component({
   components: {

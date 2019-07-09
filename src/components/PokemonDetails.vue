@@ -29,7 +29,6 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import gql from 'graphql-tag'
-import pokemons from '@/assets/pokemons.json'
 import TypeBadge from '@/components/TypeBadge.vue'
 import BoxMax from '@/components/BoxMax.vue'
 import AttackTable from '@/components/AttackTable.vue'

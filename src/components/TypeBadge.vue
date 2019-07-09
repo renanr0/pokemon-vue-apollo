@@ -6,7 +6,6 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import pokemons from '@/assets/pokemons.json';
 
 enum TYPE_COLORS {
   Grass = '#75C236',  
