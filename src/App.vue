@@ -1,29 +1,33 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <nav class='logo'>
+      <router-link to='/'>
+        <img alt="Pokemon logo" src="./assets/logo.svg">
+      </router-link>
+    </nav>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+  * {
+    box-sizing: border-box;
+  }
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2C3E50;
+  }
+  .logo {
+    width: min-content;
+    margin: 0 auto;
+  }
+
+  .home {
+    a {  
+      text-decoration: none;
+      color: #2C3E50
     }
   }
-}
 </style>
