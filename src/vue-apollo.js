@@ -9,7 +9,7 @@ Vue.use(VueApollo)
 const AUTH_TOKEN = 'apollo-token'
 
 // Http endpoint
-const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'https://graphql-pokemon.now.sh/graphql'
+const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'https://graphql-pokemon2.vercel.app/'
 
 // Config
 const defaultOptions = {
